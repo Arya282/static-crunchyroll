@@ -1,0 +1,117 @@
+body{
+    background: black;
+}
+
+.central{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo{
+    height: auto;
+    width: 170px;
+    object-fit: contain;
+}
+
+.buttons-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-login{
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    color: lightgray;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.btn-login:hover{
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-trial{
+    width: 205px;
+    height: 40px;
+    background: #FF640A;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.btn-trial:hover{
+    background: darkorange;
+    color: #181818;
+    transition: 0.1s ease-in-out;
+}
+
+.banner {
+    height: 550px;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 60%,
+            black 100%
+        ),
+        linear-gradient(
+            to right,
+            black 0%,
+            rgba(0, 0, 0, 0.9) 30%,
+            rgba(0, 0, 0, 0.4) 55%,
+            transparent 100%
+        ),
+        url("asta.png");
+
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*gap: 10px;*/
+    padding-left:10px;
+    height: 100%;
+}
+#bclogo{
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+h2{
+    color: white;
+}
+
+#plan-button{
+    width: 150px;
+    height: 50px;
+    background: #FF640A;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+}
