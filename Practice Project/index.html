@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crunchyroll - Watch Popular Anime & Read Manga Online</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Happy+Monkey&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
@@ -21,15 +25,164 @@
                     <img id="bclogo" src="clover.png" alt="Black Clover Logo">
                     <h1>NEW DUBS!</h1>
                     <h2>Watch now with English dub</h2>
-                    <button id="plan-button">Compare Plans</button>
+                    <button id="plan-button" onclick="document.getElementById('premium-section').scrollIntoView({ behavior: 'smooth' })">Compare Plans</button>
                 </div>
             </div>
+
+            <!-- Pick Your Premium Section -->
+            <section class="premium-section" id="premium-section">
+                <h2 class="premium-heading">Pick Your Premium</h2>
+
+                <!-- Monthly / Yearly Billing Toggle -->
+                <div class="toggle-container">
+                    <div class="billing-toggle">
+                        <button class="toggle-option" id="monthly-toggle" type="button">Monthly</button>
+                        <button class="toggle-option active" id="yearly-toggle" type="button">
+                            <span class="toggle-title">Yearly</span>
+                            <span class="save-tag">SAVE UP TO 16%</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plans Grid -->
+                <div class="plans-grid">
+                    <!-- Fan Plan -->
+                    <div class="plan-card">
+                        <div class="card-badge-placeholder"></div>
+                        <h3 class="plan-title">Fan</h3>
+                        <p class="plan-price" data-monthly="₹79/mo" data-yearly="₹469/yr">₹469/yr</p>
+                        <button class="btn-card btn-outline">Start 7-Day Free Trial</button>
+                        <a href="#" class="skip-trial-btn">Skip Free Trial</a>
+
+                        <ul class="plan-perks">
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>No ads*</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Complete access to Crunchyroll's library</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>New episodes shortly after airing in Japan</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Stream on a total of <span class="highlight-orange">1 device</span> at a time</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Offline Viewing</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mega Fan Plan (Most Popular) -->
+                    <div class="plan-card featured-card">
+                        <div class="card-badge">
+                            <span class="badge-star">&#9733;</span> Most Popular <span class="badge-star">&#9733;</span>
+                        </div>
+                        <h3 class="plan-title">Mega Fan</h3>
+                        <p class="plan-price" data-monthly="₹99/mo" data-yearly="₹569/yr">₹569/yr</p>
+                        <button class="btn-card btn-filled">Start 7-Day Free Trial</button>
+                        <a href="#" class="skip-trial-btn">Skip Free Trial</a>
+
+                        <ul class="plan-perks">
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>No ads*</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Complete access to Crunchyroll's library</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>New episodes shortly after airing in Japan</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Stream on a total of <span class="highlight-orange">4 devices</span> at a time</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Offline Viewing</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Access to Crunchyroll Game Vault</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ultimate Fan Plan -->
+                    <div class="plan-card">
+                        <div class="card-badge-placeholder"></div>
+                        <h3 class="plan-title">Ultimate Fan</h3>
+                        <p class="plan-price" data-monthly="₹149/mo" data-yearly="₹999/yr">₹999/yr</p>
+                        <button class="btn-card btn-outline">Start 7-Day Free Trial</button>
+                        <a href="#" class="skip-trial-btn">Skip Free Trial</a>
+
+                        <ul class="plan-perks">
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>No ads*</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Complete access to Crunchyroll's library</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>New episodes shortly after airing in Japan</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Stream on a total of <span class="highlight-orange">6 devices</span> at a time</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Offline Viewing</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Access to Crunchyroll Game Vault</span>
+                            </li>
+                            <li>
+                                <span class="perk-check">&#10003;</span>
+                                <span>Access to Crunchyroll Manga</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-        
+
+        <script>
+            // Interactive Billing Toggle
+            const monthlyToggle = document.getElementById('monthly-toggle');
+            const yearlyToggle = document.getElementById('yearly-toggle');
+            const priceElements = document.querySelectorAll('.plan-price');
+
+            function setBilling(billingType) {
+                if (billingType === 'monthly') {
+                    monthlyToggle.classList.add('active');
+                    yearlyToggle.classList.remove('active');
+                    priceElements.forEach(el => {
+                        el.textContent = el.getAttribute('data-monthly');
+                    });
+                } else {
+                    yearlyToggle.classList.add('active');
+                    monthlyToggle.classList.remove('active');
+                    priceElements.forEach(el => {
+                        el.textContent = el.getAttribute('data-yearly');
+                    });
+                }
+            }
+
+            monthlyToggle.addEventListener('click', () => setBilling('monthly'));
+            yearlyToggle.addEventListener('click', () => setBilling('yearly'));
+        </script>
     </body>
 </html>
-
-
-
-
-
